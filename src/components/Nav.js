@@ -32,6 +32,7 @@ export default function Nav() {
 
   const renderLink = (id, label) => {
 return (
+
   <ScrollLink
   _hover={{
     textDecoration: "none",
@@ -47,17 +48,19 @@ return (
 >
   {label}
 </ScrollLink>
+
 )
   }
   return (
-    <>
-      <Box  w='100%' bg={'gray.50'} px={4}>
+    <Flex w="100%" zIndex={10}   boxShadow={'-3px 1px 30px -13px rgba(66, 68, 90, 1)'}>
+      <Box   w='100%' bg={'gray.50'} px={4}>
         <Flex maxW='1024px' m='0 auto' h={16} alignItems={'center'} justifyContent={'space-between'}>
           <IconButton
             size={'md'}
             icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
             aria-label={'Open Menu'}
             display={{ md: 'none' }}
+            bg='transparent'
             onClick={isOpen ? onClose : onOpen}
           />
 
@@ -70,7 +73,7 @@ return (
               </Box>
             <HStack
               as={'nav'}
-              spacing={4}
+              spacing={10}
               display={{ base: 'none', md: 'flex' }}>
               {Links.map((item) => (
                renderLink(item.id, item.label)
@@ -90,6 +93,6 @@ return (
           </Box>
         ) : null}
       </Box>
-    </>
+    </Flex>
   );
 }

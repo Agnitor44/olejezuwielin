@@ -42,23 +42,27 @@ export default function Header() {
     {
       title: 'Sama natura',
       text:
-        "The project board is an exclusive resource for contract work. It's perfect for freelancers, agencies, and moonlighters.",
+        "Poznaj siłę natury w każdej kropli naszych olejów - czystość, świeżość i wartości odżywcze.",
       image:
         '/images/baner/rzepak.jpg',
+        color: 'white'
     },
     {
       title: 'Lokalna produkcja',
       text:
-        "The project board is an exclusive resource for contract work. It's perfect for freelancers, agencies, and moonlighters.",
+        "Nasze oleje są wytwarzane ręcznie, z miłością i pasją, z lokalnie pozyskiwanych składników.",
       image:
         '/images/baner/czarnuszka.jpg',
+        color: 'white'
     },
     {
       title: 'Naturalne oleje',
       text:
-        "The project board is an exclusive resource for contract work. It's perfect for freelancers, agencies, and moonlighters.",
+        "Wyjątkowe aromaty i smaki, bez dodatków sztucznych składników.",
       image:
         '/images/baner/olej.jpg',
+        color: 'white'
+
     },
   ];
 
@@ -115,20 +119,25 @@ export default function Header() {
             backgroundPosition="center"
             backgroundRepeat="no-repeat"
             backgroundSize="cover"
+            
             backgroundImage={`url(${card.image})`}>
             {/* This is the block you need to change, to customize the caption */}
-            <Container size="container.lg" height="600px" position="relative">
+            <Container size="container.lg" height="600px" position="relative" display={'flex'} justifyContent={'center'}>
               <Stack
                 spacing={6}
-                w={'full'}
-                maxW={'lg'}
+                borderRadius={'md'}
+                w={['xs', null, 'sm', null, 'lg']}
                 position="absolute"
+                flex={1}
+                m='0 auto'
+               bg={'rgba(0,0,0,0.4)'}
+                p={'20px'}
                 top="50%"
                 transform="translate(0, -50%)">
-                <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
+                <Heading  fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
                   {card.title}
                 </Heading>
-                <Text fontSize={{ base: 'md', lg: 'lg' }}>
+                <Text  zIndex={2} color={card.color} fontWeight={800}   fontSize={{ base: 'sm', sm: 'md', lg: 'lg' }}>
                   {card.text}
                 </Text>
               </Stack>

@@ -58,12 +58,13 @@ export default function Products({openModal}) {
               src={item?.image}
             />
           </Box>
-          <Stack pt={10} align={'start'}>
-            <Heading fontSize={'2xl'} fontFamily={'body'} fontWeight={500}>
+          <Stack pt={10} align={'start'} spacing={1}>
+            <Heading pb={'2px'} fontSize={'2xl'} fontFamily={'body'} fontWeight={500}>
             {item.name}
             </Heading>
-            <Stack pt={2} w={'100%'} direction={'row'} align={'start'} justifyContent='space-between'>
-              <Text fontWeight={800} fontSize={'xl'}>
+            <Divider/>
+            <Stack  pt={'3px'} w={'100%'} direction={'row'} align={'start'} justifyContent='space-between'>
+              <Text fontWeight={400} fontSize={'xl'} color={'gray.500'} >
                 {
                 `od ${item?.price[0].value} zł`
                 }
@@ -79,9 +80,9 @@ export default function Products({openModal}) {
   }  
 
   return (
-    <VStack id='products'  w='100%' pt={10} >
+    <VStack px={'20px'} id='products'  w='100%' pt={10} >
     <VStack align='start' pt={2}>
-        <Heading >Oleje</Heading>
+        <Heading>Oleje</Heading>
     <SimpleGrid columns={[1, 2, 3, 4]} spacing={10}>
         {oilProducts.map(item => renderCard(item) )}
     </SimpleGrid>

@@ -44,7 +44,7 @@ przeciwbólowe, a nawet przeciwnowotworowe.
         {size: 500, value: 95 },
         {size: 1000, value: 180 },
     ],
-    image: '/images/products/olej.jpg',
+    image: '/images/products/czarnuszka.jpg',
 },
 {
     name:'Olej z pestek dyni',
@@ -91,7 +91,7 @@ przeciwbólowe, a nawet przeciwnowotworowe.
         {size: 500, value: 85 },
         {size: 1000, value: 160 },
     ],
-    image: '/images/products/olej.jpg',
+    image: '/images/products/dynia.jpg',
 
 },
 {
@@ -131,7 +131,7 @@ przeciwbólowe, a nawet przeciwnowotworowe.
         {size: 500, value: 65 },
         {size: 1000, value: 120 },
     ],
-    image: '/images/products/olej.jpg',
+    image: '/images/products/konopny.jpg',
 
 },
 {
@@ -216,7 +216,7 @@ przeciwbólowe, a nawet przeciwnowotworowe.
         {size: 500, value: 35 },
         {size: 1000, value: 60 },
     ],
-    image: '/images/products/olej.jpg',
+    image: '/images/products/len.jpg',
 
 },
 {
@@ -260,7 +260,7 @@ przeciwbólowe, a nawet przeciwnowotworowe.
         {size: 500, value: 55 },
         {size: 1000, value: 100 },
     ],
-    image: '/images/products/olej.jpg',
+    image: '/images/products/ostropest.jpg',
 
 },
 {
@@ -306,7 +306,7 @@ przeciwbólowe, a nawet przeciwnowotworowe.
         {size: 500, value: 25 },
         {size: 1000, value: 40 },
     ],
-    image: '/images/products/olej.jpg',
+    image: '/images/products/rzepak.jpg',
 
 },
 {
@@ -352,7 +352,7 @@ przeciwbólowe, a nawet przeciwnowotworowe.
         {size: 500, value: 65 },
         {size: 1000, value: 120 },
     ],
-    image: '/images/products/olej.jpg',
+    image: '/images/products/sezam.jpg',
 
 },
 {
@@ -401,7 +401,7 @@ przeciwbólowe, a nawet przeciwnowotworowe.
         {size: 500, value: 25 },
         {size: 1000, value: 40 },
     ],
-    image: '/images/products/olej.jpg',
+    image: '/images/products/słonecznik.jpg',
 
 },
 
@@ -445,7 +445,7 @@ zamknięte.
             {size: 200, value: 10 },
             {size: 500, value: 20 },
         ],
-        image: '/images/products/olej.jpg',
+        image: '/images/products/mąka.jpg',
     },
     {
         name:'musztarda ostra',
@@ -457,7 +457,7 @@ zamknięte.
             {size: 140, value: 7 },
             {size: 300, value: 15 },
         ],
-        image: '/images/products/olej.jpg',
+        image: '/images/products/musztarda.jpg',
     },
     
     ]

@@ -42,7 +42,7 @@ export default function ProductModal(
         return (
             <Box w='100%'>
                <Text
-                 fontSize={{ base: '16px', lg: '18px' }}
+                fontSize={{ base: 'sm', sm: 'md', lg: 'lg' }}
                  color={useColorModeValue('yellow.500', 'yellow.300')}
                  fontWeight={'500'}
                  textTransform={'uppercase'}
@@ -52,7 +52,7 @@ export default function ProductModal(
  
                <List mb={4} w='100%' spacing={2}>
                    {how?.map(item => (
-                         <ListItem>
+                         <ListItem fontSize={{ base: 'sm', sm: 'md', lg: 'lg' }}>
                         {`${item}`}
                        </ListItem>
                    ))}
@@ -89,16 +89,16 @@ return null
    </VStack>
 
 
-    <Divider/>
+   
   </Box>
   )
  } 
  
   const renderContent = () => {
     return (
-        <Container maxW={'7xl'}>
-        <VStack>
-          <Flex>
+        <Container maxW={'7xl'} pb={'20px'}>
+        <VStack >
+          <Flex w='100%' mt={'4vh'}>
             <Image
               rounded={'md'}
               alt={'product image'}
@@ -111,12 +111,17 @@ return null
               h={{ base: '100%', sm: '400px', lg: '500px' }}
             />
           </Flex>
-          <Stack spacing={{ base: 6, md: 10 }}>
-            <Box as={'header'}>
+          <Stack pt={'10px'} w='100%'>
+                
+            <Box w='100%' as={'header'} mb={'5px'}>
               <Heading
                 lineHeight={1.1}
                 fontWeight={600}
-                fontSize={{ base: '2xl', sm: '4xl', lg: '5xl' }}>
+                textAlign={'left'}
+                w='100%'
+                p={0}
+                m={0}
+                fontSize={{ base: 'xl', sm: '2xl', lg: '3xl' }}>
                 {name}
               </Heading>
             </Box>
@@ -130,7 +135,7 @@ return null
                 />
               }>
               <VStack spacing={{ base: 4, sm: 6 }}>
-                <Text fontSize={'lg'}>
+                <Text fontSize={{ base: 'sm', sm: 'md', lg: 'lg' }}>
                 {about}
                 </Text>
               </VStack>
@@ -146,7 +151,7 @@ return null
             {sub && (
         <Box w='100%'>
             <Text
-            fontSize={{ base: '16px', lg: '18px' }}
+            fontSize={{ base: 'sm', sm: 'md', lg: 'lg' }}
             color={useColorModeValue('yellow.500', 'yellow.300')}
             fontWeight={'500'}
             textTransform={'uppercase'}
@@ -167,7 +172,7 @@ return null
   {contain && (
         <Box w='100%'>
             <Text
-            fontSize={{ base: '16px', lg: '18px' }}
+            fontSize={{ base: 'sm', sm: 'md', lg: 'lg' }}
             color={useColorModeValue('yellow.500', 'yellow.300')}
             fontWeight={'500'}
             textTransform={'uppercase'}
@@ -176,7 +181,10 @@ return null
           </Text>
 
           <Flex mb={4}>
-              {contain}
+            <Text fontSize={{ base: 'sm', sm: 'md', lg: 'lg' }}>
+            {contain}
+
+            </Text>
           </Flex>
           <Divider/>
           
@@ -191,7 +199,7 @@ return null
   }  
 
   return (
-       <Modal size='6xl' isOpen={isOpen && product} onClose={onClose}>
+       <Modal zIndex={4} size='6xl' isOpen={isOpen && product} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>
           <ModalCloseButton />

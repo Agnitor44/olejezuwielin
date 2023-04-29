@@ -39,17 +39,17 @@ import {
   export default function About() {
     return (
         
-        <Flex id='about' py={10}  w='100%'>
-        <Container backgroundImage={'/images/contact/wood.jpg'}  w='100%'   mt={10} maxW={'7xl'} py={12} px={10} color='white' borderRadius={'md'}>
+      
+      <Flex id='about' py={10}  w='100%'>
+        <Container  boxShadow={'-3px 9px 24px 0px rgba(66, 68, 90, 1)'} backgroundImage={'/images/contact/wood.jpg'}  w='100%'   mt={10} maxW={'7xl'} py={12} px={10} color='white' borderRadius={'md'}>
           <SimpleGrid  bg='blackAlpha.600' columns={{ base: 1, md: 2 }} spacing={10}>
             <Stack p={4}  spacing={4}>
               <Heading>
               O nas
           </Heading>
-          <Text>
-          Witaj na naszej stronie internetowej! Jesteśmy dumni, że możemy reprezentować lokalny biznes specjalizujący się w tworzeniu i sprzedaży wysokiej jakości olejów w Uwielinach. Nasza pasja i zaangażowanie w to, co robimy, pozwala nam oferować naszym klientom produkty, które są zarówno smaczne, jak i zdrowe.
-      
-          Nasze oleje powstają przy użyciu jedynie najlepszych, lokalnie pozyskiwanych składników i tradycyjnych metod produkcji. Dzięki temu, nasze produkty są wyjątkowe i pełne naturalnego smaku.
+          <Text fontSize={{ base: 'sm', sm: 'md', lg: 'lg' }}>
+
+          Witaj na naszej stronie internetowej! Jesteśmy dumni z tego, że reprezentujemy lokalny biznes, który specjalizuje się w tworzeniu i sprzedaży olejów najwyższej jakości w Uwielinach. Nasza pasja i zaangażowanie w to, co robimy, pozwala nam zaoferować naszym klientom produkty, które są zarówno pyszne, jak i zdrowe. Wytwarzamy nasze oleje wyłącznie z najlepszych, lokalnie pozyskiwanych składników i z użyciem tradycyjnych metod produkcji. Dzięki temu nasze produkty są niepowtarzalne i wypełnione naturalnym smakiem.
           </Text>
             </Stack>
             <Flex>
