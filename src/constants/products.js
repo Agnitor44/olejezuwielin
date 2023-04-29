@@ -432,7 +432,7 @@ zamknięte.
             {size: 500, value: 8 },
             {size: 1000, value: 15 },
         ],
-        image: '/images/products/olej.jpg',
+        image: '/images/products/mąka.jpg',
         notLiquid: true
     },
     {
@@ -445,7 +445,7 @@ zamknięte.
             {size: 200, value: 10 },
             {size: 500, value: 20 },
         ],
-        image: '/images/products/mąka.jpg',
+        image: '/images/products/jabłka.jpg',
     },
     {
         name:'musztarda ostra',
