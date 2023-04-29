@@ -79,7 +79,7 @@ export default function Form({STRINGS}) {
         }
         else if(error) {
             return (
-            <Text fontSize={'14px'} color={'red.500'}>
+            <Text ml={2} fontSize={'14px'} color={'red.500'}>
                 {error}
             </Text>
             )
