@@ -1,12 +1,6 @@
 import { Flex, Heading, HStack, Stack, Text, VStack } from '@chakra-ui/react'
 import React from 'react'
-import {
-    MdPhone,
-    MdEmail,
-    MdLocationOn,
-    MdFacebook,
-    MdOutlineEmail,
-  } from 'react-icons/md';
+
 import Form from './Form';
 
 

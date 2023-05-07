@@ -121,7 +121,7 @@ return (
     const renderInfo = () => {
         return (
           
-          <VStack  bg='gray.100' mx={'20px'} h='100%' p={'10px'} w={['100%', null, null, null, '35%']} borderRadius={'md'} alignItems="flex-start" alignSelf={'center'}>
+          <VStack my={['20px', null, null, null, 0]}  bg='gray.100' mx={'20px'} h='100%' p={'10px'} w={['100%', null, null, null, '35%']} borderRadius={'md'} alignItems="flex-start" alignSelf={'center'}>
                          <Flex
                         size="md"
                         height="48px"

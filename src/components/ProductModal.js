@@ -160,7 +160,10 @@ return null
           </Text>
 
           <Flex mb={4}>
-              {sub}
+            <Text  fontSize={{ base: 'sm', sm: 'md', lg: 'lg' }}>
+            {sub}
+
+            </Text>
           </Flex>
           <Divider/>
 

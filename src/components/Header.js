@@ -134,10 +134,10 @@ export default function Header() {
                 p={'20px'}
                 top="50%"
                 transform="translate(0, -50%)">
-                <Heading  fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
+                <Heading as='h1'  fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
                   {card.title}
                 </Heading>
-                <Text  zIndex={2} color={card.color} fontWeight={800}   fontSize={{ base: 'sm', sm: 'md', lg: 'lg' }}>
+                <Text as='h2'  zIndex={2} color={card.color} fontWeight={800}   fontSize={{ base: 'sm', sm: 'md', lg: 'lg' }}>
                   {card.text}
                 </Text>
               </Stack>
